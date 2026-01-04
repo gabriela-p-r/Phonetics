@@ -103,7 +103,6 @@
     };
     timeline.push(familiarization_instructions);
 
-    // Familiarization trials
     var familiarization_stimuli = [
         {stimulus: 'sound/fiz.mp3', choice1: 'Fiz', choice2: 'Vis', correct_resp: 0, type: 'familiarization'},
         {stimulus: 'sound/vis.mp3', choice1: 'Fiz', choice2: 'Vis', correct_resp: 1, type: 'familiarization'},
@@ -258,9 +257,9 @@
             <p>Thank you!</p>
             <p>Click on the button below to download your data.</p>
         `,
-        choices: ["Baixar dados"],
+        choices: ["Download data"],
         on_finish: function () {
-            jsPsych.data.get().localSave("csv", "dados_experimento.csv");
+            jsPsych.data.get().localSave("csv", "data_experiment.csv");
         }
     };
 
@@ -271,3 +270,4 @@
 </script>
 
 </html>
+
